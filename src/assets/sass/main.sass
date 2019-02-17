@@ -181,10 +181,17 @@ a
 .btn
   &-more
     display: none
+    
     &__label
       position: relative
       order: 2
       display: block
+      width: 100%
+      height: 40px
+      line-height: 40px
+      text-align: center
+      background: #fff
+      border: 1px solid #ccc
     &:checked
       & ~ .second-list
         display: flex
@@ -196,11 +203,17 @@ a
 
   &-less
     display: none
+    
     &__label
       position: relative
       order: 4
-      display: block
       display: none
+      width: 100%
+      height: 40px
+      line-height: 40px
+      text-align: center
+      background: #fff
+      border: 1px solid #ccc  
     &:checked
       .btn-less__label,
       & ~ .second-list
