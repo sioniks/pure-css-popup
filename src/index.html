@@ -1,4 +1,4 @@
-<!DOCdata-type html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Popup-gog</title>
+  <link rel="stylesheet" href="./assets/css/_normalize.css">
   <link rel="stylesheet" href="./assets/css/main.min.css">
 </head>
 
@@ -22,12 +23,6 @@
               <use xlink:href='#icon-params'></use>
             </svg>
           </a>
-          <!-- <a href="" tabindex="0" class="open">
-            <svg class='icon-svg'>
-              <use xlink:href='#icon-menu4'></use>
-            </svg>
-          </a> -->
-
         </li>
         <li class="nav-link bell">
           <a href="">
@@ -44,108 +39,110 @@
 
 
   </main>
-  <div id='popup' class="popup_items">
-    <ul class="submenu-list firs-list">
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-tv'></use>
-        </svg>
-        <div class="submenu-item_text">TV</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-location'></use>
-        </svg>
-        <div class="submenu-item_text">Location</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-music'></use>
-        </svg>
-        <div class="submenu-item_text">Music</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-shop'></use>
-        </svg>
-        <div class="submenu-item_text">Shop</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-trash'></use>
-        </svg>
-        <div class="submenu-item_text">Trash</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-mail'></use>
-        </svg>
-        <div class="submenu-item_text">Mail</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-study'></use>
-        </svg>
-        <div class="submenu-item_text">Study</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-key'></use>
-        </svg>
-        <div class="submenu-item_text">Key</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-like'></use>
-        </svg>
-        <div class="submenu-item_text">Like</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-food'></use>
-        </svg>
-        <div class="submenu-item_text">Food</div>
-      </li>
-    </ul>
-    <ul class="submenu-list second-list">
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-camera'></use>
-        </svg>
-        <div class="submenu-item_text">Camera</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-note'></use>
-        </svg>
-        <div class="submenu-item_text">Note</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-t-shirt'></use>
-        </svg>
-        <div class="submenu-item_text">T-shirt</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-bulb'></use>
-        </svg>
-        <div class="submenu-item_text">Idea</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-banknote'></use>
-        </svg>
-        <div class="submenu-item_text">Money</div>
-      </li>
-      <li class="submenu-item">
-        <svg class='icon-svg'>
-          <use xlink:href='#icon-fire'></use>
-        </svg>
-        <div class="submenu-item_text">Popular</div>
-      </li>
+  <div id='popup' class="popup-wrap">
+    <a href="#" class="popup__overlay"></a>
+    <div class="popup_items">
+      <ul class="submenu-list first-list">
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-tv'></use>
+          </svg>
+          <div class="submenu-item_text">TV</div>
+        </li>
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-location'></use>
+          </svg>
+          <div class="submenu-item_text">Location</div>
+        </li>
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-music'></use>
+          </svg>
+          <div class="submenu-item_text">Music</div>
+        </li>
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-shop'></use>
+          </svg>
+          <div class="submenu-item_text">Shop</div>
+        </li>
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-mail'></use>
+          </svg>
+          <div class="submenu-item_text">Mail</div>
+        </li>
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-study'></use>
+          </svg>
+          <div class="submenu-item_text">Study</div>
+        </li>
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-key'></use>
+          </svg>
+          <div class="submenu-item_text">Key</div>
+        </li>
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-like'></use>
+          </svg>
+          <div class="submenu-item_text">Like</div>
+        </li>
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-food'></use>
+          </svg>
+          <div class="submenu-item_text">Food</div>
+        </li>
+      </ul>
+      <input class="btn-more" name="items" id="more-items" type="radio" />
+      <label class="btn-more__label" for="more-items">Show more items</label>
+      <input class="btn-less" name="items" id="less-items" type="radio" checked="checked" />
+      <label class="btn-less__label" for="less-items">Show less items</label>
+      <ul class="submenu-list second-list">
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-camera'></use>
+          </svg>
+          <div class="submenu-item_text">Camera</div>
+        </li>
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-note'></use>
+          </svg>
+          <div class="submenu-item_text">Note</div>
+        </li>
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-t-shirt'></use>
+          </svg>
+          <div class="submenu-item_text">T-shirt</div>
+        </li>
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-bulb'></use>
+          </svg>
+          <div class="submenu-item_text">Idea</div>
+        </li>
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-banknote'></use>
+          </svg>
+          <div class="submenu-item_text">Money</div>
+        </li>
+        <li class="submenu-item">
+          <svg class='icon-svg'>
+            <use xlink:href='#icon-fire'></use>
+          </svg>
+          <div class="submenu-item_text">Popular</div>
+        </li>
 
-    </ul>
+      </ul>
+
+    </div>
   </div>
 
   <svg class='svg-wrapper' aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;"

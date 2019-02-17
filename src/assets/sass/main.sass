@@ -17,6 +17,14 @@ ul
   list-style-type: none
   padding-inline-start: 0
 
+::-webkit-scrollbar 
+  width: 0px
+  background: transparent 
+
+::-webkit-scrollbar-thumb 
+    background: #FF0000
+
+
 html,
 body
   width: 100%
@@ -111,21 +119,105 @@ a
       display: block
       border-radius: 50%
       background: #9e3232
-      width: 50px
-      height: 50px
+      width: 40px
+      height: 40px
       text-align: center
-      line-height: 50px
+      line-height: 40px
       color: #fff
+      &:hover
+        background: rgba(#9e3232, .5)
 
-.popup_items
+  
+.popup-wrap 
+  position: absolute
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
   visibility: hidden
   opacity: 0
-  width: 350px;
-  height: 450px;
-  background-color: #ccc;
-  position: absolute;
-  top: 74px;
-  right: 60px;
   &:target 
     visibility: visible
     opacity: 1
+
+.popup__overlay
+  z-index: 1
+  position: absolute
+  width: 100%
+  height: 100%
+
+
+.popup_items
+  width: 350px
+  height: 450px
+  background-color: #ccc
+  position: absolute
+  top: 74px
+  right: 60px
+  z-index: 5
+  display: flex
+  flex-direction: column
+  overflow-y: scroll
+
+.first-list
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 100%
+  min-height: 410px
+  position: relative
+  order: 1
+
+.second-list
+  
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 100%
+  min-height: 280px
+  position: relative
+  order: 3
+  display: none
+
+.btn
+  &-more
+    display: none
+    &__label
+      position: relative
+      order: 2
+      display: block
+    &:checked
+      & ~ .second-list
+        display: flex
+      & ~ .btn-less__label
+        display: block
+      & ~ .btn-more__label
+        display: none
+      
+
+  &-less
+    display: none
+    &__label
+      position: relative
+      order: 4
+      display: block
+      display: none
+    &:checked
+      .btn-less__label,
+      & ~ .second-list
+        display: none
+
+.submenu-item
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-end
+  width: 100px
+  height: 130px
+  position: relative
+  .icon-svg
+    width: 60%
+    height: 60%
+  &_text 
+    text-align: center
+    margin-top: 5px
+    
